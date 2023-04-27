@@ -1,3 +1,5 @@
+import React from "react";
+
 export const revalidate = 0;
 
 const Card = ({ title, body }: { title: string; body: string }) => (
@@ -27,6 +29,7 @@ export default async function Home() {
         {concepts &&
           concepts.map((concept: any) => (
             <Card
+              key={concept.id}
               title={concept.attributes.title}
               body={concept.attributes.body}
             />
