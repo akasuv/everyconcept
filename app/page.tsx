@@ -1,6 +1,6 @@
 import React from "react";
 
-export const revalidate = false;
+export const revalidate = Infinity;
 
 const Card = ({ title, body }: { title: string; body: string }) => (
   <div className="card w-1/2 bg-base-100 shadow-sm border border-black">
